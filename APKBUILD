@@ -27,10 +27,14 @@ prepare() {
 
 build() {
 	cd "$_builddir"
+	phpize
+	./configure
 }
 
 package() {
 	cd "$_builddir"
+	make || return 1
+	make INSTALL_ROOT=$pkgdir install || return 1
 }
 
 md5sums="ea4cc29b3f55280150339a6b184c9c78  master.zip"
