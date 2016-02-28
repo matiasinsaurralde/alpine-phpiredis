@@ -11,7 +11,7 @@ depends=""
 depends_dev="php-dev autoconf"
 makedepends="$depends_dev"
 install=""
-subpackages="$pkgname-dev $pkgname-doc"
+subpackages=""
 source="https://github.com/nrk/phpiredis/archive/master.zip"
 
 _builddir=
