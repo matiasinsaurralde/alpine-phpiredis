@@ -14,7 +14,7 @@ install=""
 subpackages=""
 source="https://github.com/nrk/phpiredis/archive/master.zip"
 
-_builddir=
+_builddir=${srcdir}/${pkgname}-master
 prepare() {
 	local i
 	cd "$_builddir"
