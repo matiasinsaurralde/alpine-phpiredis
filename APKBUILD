@@ -35,6 +35,8 @@ package() {
 	cd "$_builddir"
 	make || return 1
 	make INSTALL_ROOT=$pkgdir install || return 1
+	install -d "$pkgdir"/etc/php/conf.d || return 1
+	echo "extension=phpiredis.so" > "$pkgdir"/etc/php/conf.d/phpiredis.ini
 }
 
 md5sums="ea4cc29b3f55280150339a6b184c9c78  master.zip"
