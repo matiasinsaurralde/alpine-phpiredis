@@ -12,3 +12,5 @@ This is a package for Alpine, maybe it will get merged into ```experimental```, 
 ## Usage
 
 I'm currently using this for a Docker image.
+
+You may find the latest APK [here](https://github.com/matiasinsaurralde/alpine-phpiredis/raw/master/phpiredis-0-r0.apk).
